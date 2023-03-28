@@ -3,12 +3,19 @@ package com.hamid.house_room;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
+@Entity
 public class House {
 	
+	@Id
 	private int id;
 	
 	private String houseNo;
 	
+	@OneToMany
 	private List<Room> rooms = new ArrayList<>();
 
 	public int getId() {

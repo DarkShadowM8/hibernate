@@ -1,7 +1,12 @@
 package com.hamid.house_room;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Room {
 	
+	@Id
 	private int id;
 	
 	private int numOfBeds;
